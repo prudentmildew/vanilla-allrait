@@ -23,7 +23,7 @@ export default class TaskListView extends BaseView {
      * Safari triggers 'change' event twice - hence 'keyup'
      */
     $on(inputAddTask, 'keyup', (e) => {
-      if(e.keyCode === 13){
+      if(e.keyCode === 13 && e.target.value.trim() !== ''){
         this.controller.saveTask(e.target.value, list.id);
       }
     });

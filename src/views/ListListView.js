@@ -23,7 +23,7 @@ export default class ListListView extends BaseView {
      * Safari triggers 'change' event twice - hence 'keyup'
      */
     $on(inputAddList, 'keyup', (e) => {
-      if(e.keyCode === 13){
+      if(e.keyCode === 13 && e.target.value.trim() !== ''){
         this.controller.saveList(e.target.value);
       }
     });
