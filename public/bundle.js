@@ -260,7 +260,7 @@
 	       * Safari triggers 'change' event twice - hence 'keyup'
 	       */
 	      (0, _helpers.$on)(inputAddList, 'keyup', function (e) {
-	        if (e.keyCode === 13) {
+	        if (e.keyCode === 13 && e.target.value.trim() !== '') {
 	          _this2.controller.saveList(e.target.value);
 	        }
 	      });
@@ -413,7 +413,7 @@
 	       * Safari triggers 'change' event twice - hence 'keyup'
 	       */
 	      (0, _helpers.$on)(inputAddTask, 'keyup', function (e) {
-	        if (e.keyCode === 13) {
+	        if (e.keyCode === 13 && e.target.value.trim() !== '') {
 	          _this2.controller.saveTask(e.target.value, list.id);
 	        }
 	      });
