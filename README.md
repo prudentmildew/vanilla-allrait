@@ -53,7 +53,7 @@ or
 $ npm run watch -- -R min
 ```
 
-### Building the application (for "production"
+### Building the application for "production"
 ```
 $ npm build
 ```
