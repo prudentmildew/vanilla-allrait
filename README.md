@@ -39,7 +39,7 @@ $ npm install
 ```
 $ npm start
 ```
-The application is exposed using port 1337, and it likes it there.
+The application is exposed at [http://localhost:1337](http://localhost:1337), and it likes it there.
 
 ### Testing the application
 ```
