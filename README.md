@@ -1,5 +1,3 @@
-# Allra.it (vanilla ES6 flavour)
-
 ## Application requirements
 > The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document
@@ -42,9 +40,6 @@ $ npm install
 $ npm start
 ```
 The application is exposed using port 1337, and it likes it there.
-```
-$ npm start
-```
 
 ### Testing the application
 ```
