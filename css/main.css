@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Montez|Lato:300);
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #e6c88c;
+    color: #44424d;
+}
+
+a, input, button{
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+body > header {
+    background-color: #c0ba96;
+    width: 100%;
+}
+
+body > header > h1 {
+    color: #44424d;
+    font-size: 6em;
+    font-family: "Montez", sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+body > header > h1 > a {
+    color: #44424d;
+    text-decoration: none;
+    outline: none;
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 100%;
+}
+
+body > header > h1 > a > sup {
+    color: #44424d;
+    font-size: .5em;
+    position: absolute;
+    top: 42px;
+    left: 54px;
+}
+
+body > footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #c0ba96;
+}
+
+.app{
+    width: 100%;
+}
+
+.app input[type="text"]{
+    background-color: #fff;
+    color: #514F5A;
+    border: none;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+    outline: none;
+    border-radius: 0;
+}
+
+.app .lists, .app .tasks{
+    list-style: none;
+    margin: 0;
+    padding: 0 1em;
+}
+
+.app .lists li, .app .tasks li{
+    position: relative;
+    border-bottom: 1px solid #d5975a;
+}
+
+.app .lists li a, .app .tasks li span{
+    display: block;
+    text-decoration: none;
+    color: #44424d;
+    width: 85%;
+    padding: 1em 0;
+    box-sizing: border-box;
+}
+
+.app .tasks li input[type="checkbox"]{
+    position: absolute;
+    top: 40%;
+}
+
+.app .tasks li span{
+    padding-left: 1.67em;
+}
+
+.app .lists li button, .app .tasks li button{
+    background-color: #e6c88c;
+    color: #d7803b;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 15%;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.app .tasks li.completed span, .app .tasks li.completed button{
+    color: #d5975a;
+}
